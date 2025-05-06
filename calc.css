@@ -1,0 +1,84 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   height: 100vh;
+    margin: 0%;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.459);
+}
+.key{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+    padding:25px;
+}
+#display{
+    width:100%;
+   font-size: 5rem;
+    border: none;
+    padding: 20px;
+    color:white;
+text-align: left;
+    background-color: hsl(0,0%,20%);
+}
+button{
+  
+    color:white;  border-radius: 50px;
+    width:80px;
+    height:80px;
+    border:none;
+    font-size: 3rem;
+    background-color: hsl(0,0%,30%);
+    cursor: pointer;
+}
+button:hover{
+    background-color: hsl(0, 0%, 40%);
+    box-shadow: 2px -5px 15px hsl(0, 0%, 40%);
+}
+button:active {
+    background-color: hsl(0, 0%, 50%);
+}
+.oper {
+    color: white;
+    background-color: hsl(35, 100%, 55%);
+}
+.equal{
+   grid-row:4/6;
+   grid-column: 4/5;
+    height: 100%;
+    border-radius: 15px;
+   align-content: center;
+}
+ 
+.oper:hover {
+    background-color: hsl(35, 100%, 65%);
+    box-shadow: 2px -5px 15px hsl(35, 100%, 75%);
+}
+.oper:active {
+    color: white;
+    background-color: hsl(35, 100%, 75%);
+}
+.calculator{
+   background-color: black;
+   max-width:420px;
+   overflow: hidden;
+   border-radius: 15px;
+}
+@media screen and (max-width:482px) and (min-width:390px){
+    button{
+
+    color:white;
+     border-radius: 50px;
+     width:70px;
+     height:70px;
+     border:none;
+     font-size: 2rem;
+     background-color: hsl(0, 0%, 30%);
+     cursor: pointer;
+}
+.key{
+    gap:10px;
+}
+}
